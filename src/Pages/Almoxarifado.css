@@ -1,0 +1,165 @@
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 10rem;
+    width: 85.5rem;
+    background-color: #004AAD;
+}
+
+.menu {
+    display: flex;
+    padding-left: 2rem;
+}
+
+.menu button {
+    display: flex;
+    width: 12rem;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #004AAD;
+}
+
+.menu a {
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.link {
+    color: white;
+}
+
+.linkReq {
+    background-color: white;
+    color: #004AAD;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.requisicao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+    width: 60rem;
+}
+
+.requisicao input {
+    height: 1.5rem;
+    border-radius: .3rem;
+    outline: none;
+    border-width: thin;
+    padding-left: .5rem;
+}
+
+.dadosPrincipais {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+.numeroRequisicao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.camposDados {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 55rem;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1px solid #004AAD;
+    border-radius: 2rem;
+}
+
+.camposDados div {
+    display: flex;
+    gap: 1rem;
+}
+
+.departamento div {
+    display: flex;
+    flex-direction: column;
+    gap: .05rem;
+}
+
+.idDep, .idFunc {
+    width: 5rem;
+}
+
+.nomeDep, .nomeFunc {
+    width: 33rem;
+}
+
+.dataReq, .cargo {
+    width: 8rem;
+}
+
+.funcionario div {
+    display: flex;
+    flex-direction: column;
+    gap: .05rem;
+}
+
+.motivos {
+    display: flex;
+    gap: .05rem;
+}
+
+.selectMotivo {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectMotivo select {
+    width: 12.5rem;
+}
+
+.radios {
+    display: flex;
+    flex-direction: row;
+}
+
+.motivos img {
+    display: flex;
+    width: 2rem;
+}
