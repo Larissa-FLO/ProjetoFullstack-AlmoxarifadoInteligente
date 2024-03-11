@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.requisicao input {
+    height: 1.5rem;
+    border: 1px solid rgb(175, 175, 175);
+    outline: none;
+    border-width: thin;
+    padding-left: .5rem;
+}
+
+.itensRequisicao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+}
+
+.boxRequisicao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.produtoRequisicao {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.produtoRequisicao input {
+    height: 2rem;
+}
+
+.produtoRequisicao div {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtoRequisicao img {
+    display: flex;
+    width: 2.3rem;
+}
+
+.codProduto {
+    width: 6rem;
+}
+
+.descricaoProduto {
+    width: 17rem;
+}
+
+.estoqueProduto {
+    width: 5rem;
+}
+
+.quantidade {
+    width: 5rem;
+}
+
+.btnAdicionar {
+    display: flex;
+    width: 7rem;
+    height: 2.2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: green;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.tabela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabela th {
+    width: 8.2rem;
+    background-color: #7ec2e9;
+    color: white;
+}
+
+.valorFinal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    padding-right: 5.2rem;
+    gap: .75rem;
+}
+
+.buttons {
+    display: flex;
+    width: 11rem;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.btnCancelar {
+    display: flex;
+    width: 5rem;
+    height: 2.2rem;
+    border-radius: 1rem;
+    background-color: #b8bcc2;
+    outline: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.btnGravar {
+    display: flex;
+    width: 5rem;
+    height: 2.2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: green;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}

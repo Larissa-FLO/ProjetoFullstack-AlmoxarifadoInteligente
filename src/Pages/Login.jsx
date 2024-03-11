@@ -1,5 +1,5 @@
 import './Login.css'
-import Almoxarifado from './Almoxarifado'
+import { Link } from 'react-router-dom'
 
 function Login() {
   
@@ -24,7 +24,7 @@ function Login() {
             </div>
 
             <div className='botoes'>
-            <button className='btn'><a className='linkbtn' href='#container'>Entrar</a></button>
+            <Link to={'/almoxarifado'} className='btn'>Entrar</Link>
             <button className='btnCadastrar'>Novo? Cadastre-se</button>
             </div>
         </div>

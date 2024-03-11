@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.dadosPrincipais {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+}
+
+.numeroRequisicao, .tituloRequisicao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    padding-left: 4.5rem;
+}
+
+.camposDados, .boxProdutos {
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+    width: 55rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border: 1px solid #8b99a1;
+    border-radius: 2rem;
+}
+
+.departamento, .funcionario {
+    display: flex;
+    gap: 1rem;
+}
+
+.departamento div {
+    display: flex;
+    flex-direction: column;
+    gap: .05rem;
+}
+
+.idDep, .idFunc {
+    width: 5rem;
+}
+
+.nomeDep, .nomeFunc {
+    width: 33rem;
+}
+
+.dataReq, .cargo {
+    width: 8rem;
+}
+
+.funcionario div {
+    display: flex;
+    flex-direction: column;
+    gap: .05rem;
+}
+
+.motivos {
+    display: flex;
+    gap: 3rem;
+}
+
+.motivos img {
+    display: flex;
+    width: 2.3rem;
+}
+
+.selectMotivo {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectMotivo div {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.selectMotivo select {
+    width: 10.5rem;
+    height: 2rem;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.radios {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(175, 175, 175);
+    height: 1.8rem;
+    width: 17rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: .3rem;
+}
+
+.radios input {
+    width: 1.3rem;
+}
+
+.radios div {
+    gap: .2rem;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}

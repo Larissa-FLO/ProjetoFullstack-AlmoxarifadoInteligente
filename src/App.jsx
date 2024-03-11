@@ -6,7 +6,13 @@ function App() {
 
   return (
     <>
-      <Almoxarifado/>
+      <Routes>
+
+        <Route path='/' element={<Login/>} />
+        <Route path='/almoxarifado' element={<Almoxarifado/>} />
+        {/* <Route path='/gerenciadorProdutos' element={<GerenciadorProduto/>} /> */}
+
+      </Routes>
     </>
   )
 }
