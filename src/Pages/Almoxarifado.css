@@ -12,9 +12,10 @@ body {
     background-color: white;
 }
 
-.container {
+#container {
     display: flex;
-    
+    flex-direction: column;
+    width: 100%;
 }
 
 .header {
@@ -22,7 +23,8 @@ body {
     flex-direction: row;
     align-items: flex-end;
     height: 10rem;
-    width: 85.5rem;
+    min-width: 120rem;
+    max-width: 120rem;
     background-color: #004AAD;
 }
 
@@ -73,8 +75,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
-    gap: 1rem;
+    padding: 1rem;
+    gap: 3rem;
     width: 60rem;
 }
 
@@ -90,28 +92,30 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 2rem;
+    gap: .5rem;
 }
 
-.numeroRequisicao {
+.numeroRequisicao, .tituloRequisicao {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: .5rem;
+    padding-left: 4.5rem;
 }
 
-.camposDados {
+.camposDados, .boxProdutos {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1.3rem;
     width: 55rem;
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
     border: 1px solid #004AAD;
     border-radius: 2rem;
 }
 
-.camposDados div {
+.departamento, .funcionario {
     display: flex;
     gap: 1rem;
 }
@@ -142,7 +146,12 @@ body {
 
 .motivos {
     display: flex;
-    gap: .05rem;
+    gap: 3rem;
+}
+
+.motivos img {
+    display: flex;
+    width: 2.3rem;
 }
 
 .selectMotivo {
@@ -150,16 +159,163 @@ body {
     flex-direction: column;
 }
 
+.selectMotivo div {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
 .selectMotivo select {
-    width: 12.5rem;
+    width: 10.5rem;
+    height: 2rem;
 }
 
 .radios {
     display: flex;
     flex-direction: row;
+    border: 1px solid black;
+    height: 1.8rem;
+    width: 17rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: .3rem;
 }
 
-.motivos img {
+.radios input {
+    width: 1.3rem;
+}
+
+.radios div {
+    gap: .2rem;
+}
+
+.itensRequisicao {
     display: flex;
-    width: 2rem;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+}
+
+.boxRequisicao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.produtoRequisicao {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.produtoRequisicao input {
+    height: 2rem;
+}
+
+.produtoRequisicao div {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtoRequisicao img {
+    display: flex;
+    width: 2.3rem;
+}
+
+.codProduto {
+    width: 6rem;
+}
+
+.descricaoProduto {
+    width: 17rem;
+}
+
+.estoqueProduto {
+    width: 5rem;
+}
+
+.quantidade {
+    width: 5rem;
+}
+
+.btnAdicionar {
+    display: flex;
+    width: 7rem;
+    height: 2.2rem;
+    border-radius: .5rem;
+    background-color: #004AAD;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.tabela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabela th {
+    width: 8.2rem;
+    background-color: #4e81c4;
+    color: white;
+}
+
+.valorFinal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    padding-right: 5.2rem;
+    gap: .75rem;
+}
+
+.buttons {
+    display: flex;
+    width: 11rem;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.btnCancelar {
+    display: flex;
+    width: 5rem;
+    height: 2.2rem;
+    border-radius: .5rem;
+    background-color: #b8bcc2;
+    outline: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.btnGravar {
+    display: flex;
+    width: 5rem;
+    height: 2.2rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #004AAD;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
 }
