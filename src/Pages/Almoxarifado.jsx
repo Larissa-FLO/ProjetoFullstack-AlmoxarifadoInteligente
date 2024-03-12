@@ -1,12 +1,10 @@
-import './Almoxarifado.css'
+import '../Styles/Almoxarifado.css'
 import Header from '../Components/Header'
 import DadosPrincipais from '../Components/DadosPrincipais'
 import Requisicao from '../Components/Requisicao'
 
 function Almoxarifado() {
-
-
-
+    
     return(
         <>
             <div id='container'>
