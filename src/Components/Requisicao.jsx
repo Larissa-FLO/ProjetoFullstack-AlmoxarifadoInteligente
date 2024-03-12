@@ -1,4 +1,4 @@
-import '../Components/Requisicao.css'
+import '../Styles/Requisicao.css'
 
 function Requisicao () {
 

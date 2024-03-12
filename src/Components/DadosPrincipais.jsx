@@ -1,4 +1,4 @@
-import '../Components/DadosPrincipais.css'
+import '../Styles/DadosPrincipais.css'
 
 function DadosPrincipais () {
 
