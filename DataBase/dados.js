@@ -74,7 +74,7 @@ const produtos = [
     },
 ]
 
-const departamentos = [
+export const departamentos = [
     {
         "idDep": 1,
         "Descricao": "Secretaria da Educação",
@@ -92,7 +92,7 @@ const departamentos = [
     },
 ]
 
-const funcionarios = [
+export const funcionarios = [
     {
         "idFunc": 1,
         "nomeFunc": "Ana Luzia",

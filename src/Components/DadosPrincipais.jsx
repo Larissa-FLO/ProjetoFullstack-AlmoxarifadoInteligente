@@ -1,44 +1,69 @@
 import '../Styles/DadosPrincipais.css'
+import NumberInput from '../Hooks/InputNumber'
+import CorInput from '../Hooks/CorInput'
+import { encontrarDepartamento, encontrarFuncionario } from '../Hooks/DadosDepartamentoEFuncionario'
+import { useState } from 'react';
 
 function DadosPrincipais () {
+
+    const [idDep, setIdDep] = useState();
+    const [idFunc, setIdFunc] = useState();
+
+    const [departamento, setDepartamento] = useState(null);
+    const [funcionario, setFuncionario] = useState(null);
+
+    const handleIdDepartamentoBlur = (event) => {
+        const dep = encontrarDepartamento(event.target.value);
+        setDepartamento(dep);
+    };
+
+    const handleIdFuncionarioBlur = (event) => {
+        const func = encontrarFuncionario(event.target.value);
+        setFuncionario(func);
+    };
+
+
 
     return (
         <>
         <div className='dadosPrincipais'>
+          <CorInput/>  
                             <div className='numeroRequisicao'>
                                 <span>Dados Principais | </span>
                                 <span>Requisição Nº:  </span>
-                                <input type="number" className='nRequisicao' />
+                                <input type='number' data-isnumber='true' className='nRequisicao' />
                             </div>
 
                             <div className='camposDados'>
                                 <div className='departamento'>
                                     <div>
                                         <span>ID: </span>
-                                        <input type="number" className='idDep'/>
+                                        <input type="number" data-isnumber='true' value={idDep} onChange={(Event) => setIdDep(Event.target.value)} onBlur={handleIdDepartamentoBlur}
+                                        className='idDep' id='idDepartamento'/>
                                     </div>
                                     <div>
                                         <span>Departamento: </span>
-                                        <input type="text" className='nomeDep'/>
+                                        <input type="text" readOnly value={departamento ? departamento.Descricao : ''} data-obrigatorios='true' className='nomeDep'/>
                                     </div>
                                     <div>
                                         <span>Data: </span>
-                                        <input type="date" className='dataReq'/>
+                                        <input type="date" data-obrigatorios='true' className='dataReq'/>
                                     </div>
                                 </div>
 
                                 <div className='funcionario'>
                                     <div>
                                         <span>ID: </span>
-                                        <input type="number" className='idFunc'/>
+                                        <input type="number" value={idFunc} onChange={(Event) => setIdFunc(Event.target.value)} onBlur={handleIdFuncionarioBlur}
+                                        className='idFunc' id='idFuncionario'/>
                                     </div>
                                     <div>
                                         <span>Funcionário: </span>
-                                        <input type="text" className='nomeFunc'/>
+                                        <input type="text" readOnly value={funcionario ? funcionario.nomeFunc : ''} data-obrigatorios='true' className='nomeFunc'/>
                                     </div>
                                     <div>
                                         <span>Cargo: </span>
-                                        <input type="text" className='cargo'/>
+                                        <input type="text" value={funcionario ? funcionario.cargoFunc : ''} data-obrigatorios='true' className='cargo'/>
                                     </div>
                                 </div>
 
